@@ -1,0 +1,13 @@
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #37352f;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.chat-checkbox {
+    cursor: pointer;
+    margin-right: 8px;
+    transform: scale(1.2); 
+}

@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Chat Manager",
+  "version": "1.1",
+  "description": "Multi-select to archive or delete ChatGPT conversations.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["*://chat.openai.com/*", "*://chatgpt.com/*"], 
+  "action": {
+      "default_popup": "popup.html",
+        "default_title": "ChatGPT Chat Manager",
+      "default_icon": {
+          "16": "icon.png",
+          "48": "icon.png",
+          "128": "icon.png"
+      }
+  },
+  "content_scripts": [
+      {
+        "matches": ["*://chat.openai.com/*", "*://chatgpt.com/*"],
+          "js": ["content.js"],
+          "css": ["styles.css"],
+                      "run_at": "document_idle"
+      }
+  ]
+}
