@@ -29,6 +29,24 @@ Easily manage your ChatGPT conversations with **bulk archive** & **bulk delete**
 3. Click either **"Bulk Delete"** (Red) or **"Bulk Archive"** (Blue).  
 4. **Chats will be deleted or archived instantly.**  
 
+## Gallery 
+Here are some screenshots demonstrating the extension in action: 
+
+! [](chatgpt-archive-delete-banner.jpg)
+An attractive banner showcasing the extension's functionality and user-friendly controls.
+
+! [](chatgpt-archive-delete-demo.jpg)
+The interface showing how chats can be selected and actions can be applied.
+
+### Demo  
+![Demo Screenshot](./chatgpt-archive-delete-demo.jpg)  
+*The interface showing how chats can be selected and actions can be applied.*  
+
+### Banner  
+![Banner Screenshot](./chatgpt-archive-delete-banner.jpg)  
+*A stylish banner showcasing the extension's functionality and user-friendly controls.*  
+
+
 ---
 
 ## Troubleshooting  
