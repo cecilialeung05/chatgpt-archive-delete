@@ -1,0 +1,62 @@
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #37352f;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.chat-checkbox {
+    cursor: pointer;
+    margin-right: 8px;
+    transform: scale(1.2); 
+}
+
+#chatManagerControls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+}
+
+#chatManagerControls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}  
+
+#bulkDeleteButton {
+    background: #dc3545;
+    color: white;
+}
+
+#bulkDeleteButton:hover {
+    background: #c82333;
+}
+
+#bulkArchiveButton {
+    background: #007bff;
+    color: white;
+  }
+
+#bulkArchiveButton:hover {
+    background: #0069d9;
+}
+
+@media (prefers-color-scheme: dark) {
+    #chatManagerControls button {
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    }
+}

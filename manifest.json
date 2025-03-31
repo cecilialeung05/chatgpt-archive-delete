@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Multi-Select Archive & Delete Manager",
+  "version": "1.1",
+  "description": "Multi-select to archive or delete ChatGPT conversations.",
+  "permissions": ["scripting"],
+  "host_permissions": ["*://chat.openai.com/*", "*://chatgpt.com/*"], 
+  "action": {
+      "default_popup": "popup.html",
+      "default_title": "ChatGPT Multi-Select Archive & Delete Manager",
+      "default_icon": {
+          "16": "icon.png",
+          "48": "icon.png",
+          "128": "icon.png"
+      }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+      {
+        "matches": ["*://chat.openai.com/*", "*://chatgpt.com/*"],
+          "js": ["content.js"],
+          "css": ["styles.css"],
+          "run_at": "document_idle"
+      }
+  ],
+  "homepage_url": "https://github.com/cecilialeung05/chatgpt-archive-delete#privacy-policy"
+}
